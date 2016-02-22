@@ -91,3 +91,29 @@ a:hover li:after {
 	max-width: 960px;
 	margin: 0 auto;
 }
+
+#contact {
+	height: 120px;
+}
+
+#contact a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	font-size: 35px;
+	text-decoration: none;
+	background: rgb(0,0,0);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+#contact a:link, #contact a:visited {
+	color: rgb(255,255,255);
+}
+
+#contact a:hover, #contact a:active {
+	color: rgb(201,31,21);
+}
