@@ -1,13 +1,31 @@
+/*=====================================*/
+/* Master Page Styles                  */
+/*=====================================*/
+
 * {
 	margin: 0;
 	font-family: arial;
 }
+
+#page-content {
+	padding: 100px 20px 0 20px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*=====================================*/
+/* Helper Classes                      */
+/*=====================================*/
 
 .img-responsive {
 	display: block;
 	width: 100%;
 	margin: 20px 0;
 }
+
+/*=====================================*/
+/* Navigation Bar                      */
+/*=====================================*/
 
 nav {
   background: rgb(0,0,0);
@@ -26,49 +44,76 @@ ul {
 
 li {
   list-style: none;
-  display: inline-block;
-  text-align: center;
-  line-height: 50px;
   background: rgb(0,0,0);
   margin: 10px 0;
 }
 
-nav a:nth-child(1) li {
+/*=====================================*/
+/* Hover Effect sizing and spacing     */
+/*=====================================*/
+
+#contact a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-decoration: none;
+	background: rgb(0,0,0);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav a:nth-child(1) li{
   width: 73px;
 }
 
-nav a:nth-child(2) li {
+nav a:nth-child(2) li{
   width: 79px;
 }
 
-nav a:nth-child(3) li {
+nav a:nth-child(3) li{
   width: 92px;
 }
 
-nav a:link, nav a:visited {
+/*=====================================*/
+/* Link Styles                         */
+/*=====================================*/
+
+a:link, a:visited {
   text-decoration: none;
   color: rgb(255,255,255);
 }
 
-a:hover li{
+a:hover {
   color: rgb(201,31,21);
 }
 
-a li:before, a li:after {
+/*=====================================*/
+/* Hover Effect                        */
+/*=====================================*/
+
+.he {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+}
+
+.he:before, .he:after {
   transition: all 0.1s ease;
   position: relative;
   top: -1px;
 }
 
-a li:before {
+.he:before {
   content: "[ ";
 }
 
-a li:after {
+.he:after {
   content: " ]";
 }
 
-a:hover li:before {
+.he:hover.he:before {
   position: relative;
   left: -5px;
   top: 1px;
@@ -77,43 +122,11 @@ a:hover li:before {
   line-height: 25px;
 }
 
-a:hover li:after {
+.he:hover.he:after {
   position: relative;
   left: 5px;
   top: 1px;
   font-size: 25px;
   color: rgb(201,31,21);
   line-height: 25px;
-}
-
-#page-content {
-	padding: 100px 20px 0 20px;
-	max-width: 960px;
-	margin: 0 auto;
-}
-
-#contact {
-	height: 120px;
-}
-
-#contact a {
-	position: absolute;
-	left: 0;
-	right: 0;
-	font-size: 35px;
-	text-decoration: none;
-	background: rgb(0,0,0);
-	display: inline-block;
-	text-align: center;
-	width: 100%;
-	padding: 20px 0;
-	margin: 0 auto;
-}
-
-#contact a:link, #contact a:visited {
-	color: rgb(255,255,255);
-}
-
-#contact a:hover, #contact a:active {
-	color: rgb(201,31,21);
 }
