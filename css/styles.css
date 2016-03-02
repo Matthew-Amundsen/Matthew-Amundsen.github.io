@@ -8,9 +8,18 @@
 }
 
 #page-content {
-	padding: 100px 20px 0 20px;
+	/*padding: 100px 20px 0 20px;*/
+	padding: 0 20px 0 20px;
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+.offset {
+	padding-top: 100px;
+}
+
+#about {
+		margin-bottom: -50px;
 }
 
 /*=====================================*/
@@ -65,11 +74,11 @@ li {
 }
 
 nav a:nth-child(1) li{
-  width: 73px;
+	width: 79px;
 }
 
 nav a:nth-child(2) li{
-  width: 79px;
+  width: 73px;
 }
 
 nav a:nth-child(3) li{
@@ -129,4 +138,12 @@ a:hover {
   font-size: 25px;
   color: rgb(201,31,21);
   line-height: 25px;
+}
+
+/*=====================================*/
+/* Work Sections                       */
+/*=====================================*/
+
+.work {
+	border: solid 1px black;
 }
