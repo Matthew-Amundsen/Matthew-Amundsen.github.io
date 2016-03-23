@@ -37,7 +37,7 @@
 /*=====================================*/
 
 nav {
-  background: rgb(0,0,0);
+  background: rgb(51,51,51);
   width: 100%;
   height: 50px;
   position: fixed;
@@ -54,7 +54,7 @@ ul {
 
 li {
   list-style: none;
-  background: rgb(0,0,0);
+  background: rgb(51,51,51);
   margin: 10px 0;
 }
 
@@ -67,7 +67,7 @@ li {
 	left: 0;
 	right: 0;
 	text-decoration: none;
-	background: rgb(0,0,0);
+	background: rgb(51,51,51);
 	display: inline-block;
 	text-align: center;
 	width: 100%;
@@ -92,7 +92,7 @@ nav a:nth-child(3) li{
 
 .github-link {
 	background: rgb(255,255,255);
-	color: rgb(0,0,0);
+	color: rgb(51,51,51);
 	text-transform: lowercase;
 	display: inline-block;
 	width: 150px;
