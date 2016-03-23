@@ -22,6 +22,10 @@
 		margin-bottom: -40px;
 }
 
+#contact {
+	height: 180px;
+	background: rgb(51,51,51);
+}
 /*=====================================*/
 /* Helper Classes                      */
 /*=====================================*/
@@ -61,18 +65,17 @@ li {
 /*=====================================*/
 /* Hover Effect sizing and spacing     */
 /*=====================================*/
-
+/*
 #contact a {
 	position: absolute;
 	left: 0;
 	right: 0;
 	text-decoration: none;
-	background: rgb(51,51,51);
 	display: inline-block;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
-}
+}*/
 
 nav a:nth-child(1) li{
 	width: 79px;
@@ -165,6 +168,43 @@ a:hover {
 /*=====================================*/
 
 .work {
-	border-bottom: solid 1px rgb(180,180,180);
+	border-bottom: dashed 1px rgb(180,180,180);
 	margin-bottom: 40px;
+}
+
+/*=====================================*/
+/* Contact Block                       */
+/*=====================================*/
+
+#contact .he {
+	display: block;
+	border-bottom: 1px dashed rgb(180,180,180);
+	margin-bottom: 20px;
+}
+
+#contact ul {
+	padding: 0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px dashed rgb(180,180,180);
+}
+
+#contact li {
+	display: inline-block;
+	width: 100px;
+	position: relative;
+	top: -13px;
+}
+
+#contact li img {
+		width: 50px;
+}
+
+#contact li.li-seperator {
+	height: 50px;
+	width: 1px;
+	background: rgb(180,180,180);
+	position: relative;
+	top: 0px;
 }
